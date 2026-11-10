@@ -1,0 +1,18 @@
+{
+  "name": "UPS Creator Studio",
+  "short_name": "UPS Studio",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#080d18",
+  "theme_color": "#080d18",
+  "description": "Universal AI Creative, Education & Business Production Platform",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
