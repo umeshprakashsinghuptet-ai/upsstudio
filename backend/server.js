@@ -4,8 +4,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import Parser from 'rss-parser';
-
 const app=express();
+app.set('trust proxy', 1);
 const port=Number(process.env.PORT||8787);
 const origins=(process.env.ALLOWED_ORIGINS||'http://localhost:8080').split(',').map(x=>x.trim()).filter(Boolean);
 const parser=new Parser({timeout:10000,headers:{'User-Agent':'UPS-Creator-Studio/1.0'}});
